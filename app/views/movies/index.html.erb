@@ -1,0 +1,18 @@
+<%= stylesheet_link_tag "movie", "data-turbo-track": "reload" %>
+
+<h1><strong>My Favorite Movies</strong></h1>
+<hr>
+<div class="moviescontainer">
+  <% @movies.each do |movie| %>
+    <div class="moviecard" style="width: 18rem;">
+      <img class="card-img-top" src="<%= movie.poster %>" alt="<%= movie.name %> Poster">
+      <div class="card-body">
+        <h5 class="card-title"><%= movie.name %></h5>
+        <p class="card-text">Rating: <%= movie.rating %></p>
+        <p class="card-text">Release Date: <%= movie.date_of_release %></p>
+        <p class="card-text">Director: <%= movie.director %></p>
+        <a href="#" class="btn btn-primary">See Details</a>
+      </div>
+    </div>
+  <% end %>
+</div>

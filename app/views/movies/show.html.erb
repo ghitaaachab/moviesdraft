@@ -1,0 +1,9 @@
+<%= stylesheet_link_tag "movie", "data-turbo-track": "reload" %>
+
+<div class="moviedetails">
+  <h2><%= @movie.name %></h2>
+  <img class="card-img-top" src="<%= @movie.poster %>" alt="<%= @movie.name %> Poster" width="70" height="300">
+  <p>Director: <%= @movie.director %></p>
+  <p>Rating: <%= @movie.rating %></p>
+  <p>Date of release: <%= @movie.date_of_release %></p>
+</div>

@@ -1,0 +1,39 @@
+.moviescontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.moviecard {
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ccc;
+  text-align: center;
+}
+
+.moviedetails {
+  width: 500px;
+  margin: 30px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ccc;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.movieform {
+  width: fit-content;
+  margin: 30px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ccc;
+  text-align: center;
+  margin-left: 50px;
+}
+ 

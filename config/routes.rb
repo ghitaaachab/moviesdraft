@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get 'movies/index'
+  get 'movies/show'
+  get 'movies/new'
+  get 'movies/edit'
+  get 'movies/create'
+  get 'movies/update'
+  get 'movies/destroy'
   devise_for :users
   root to: "pages#home"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

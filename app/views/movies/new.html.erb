@@ -1,0 +1,18 @@
+<%= stylesheet_link_tag "movie", "data-turbo-track": "reload" %>
+<h2>Create a new movie</h2>
+
+<div class="movieform">
+ <%= form_with model: @restaurant do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :director %>
+  <%= f.text_field :director %>
+  <%= f.label :rating %>
+  <%= f.number_field :rating %>
+  <%= f.label :date_of_release %>
+  <%= f.date_field :date_of_release %>
+  <%= f.label :poster %>
+  <%= f.file_field :poster %>
+  <%= f.submit %>
+<% end %>
+</div>
