@@ -27,13 +27,22 @@
 }
 
 .movieform {
-  width: fit-content;
+  width: 70%;
   margin: 30px;
-  padding: 10px;
+  padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 10px #ccc;
   text-align: center;
-  margin-left: 50px;
+  margin-left: 70px;
+  display: flex;
 }
- 
+
+.movieform input {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ccc;
+}

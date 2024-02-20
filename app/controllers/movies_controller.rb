@@ -9,19 +9,25 @@ class MoviesController < ApplicationController
 
   def new
     @movie = Movie.new
-    @movie.save
-  end
-
-  def edit
-   
   end
 
   def create
+    @movie = Movie.new(movie_params)
+    @movie.save
+    redirect_to movie_path(@movie)
+  end
+
+  def edit
   end
 
   def update
   end
 
   def destroy
+  end
+
+  private
+  def movie_params
+    params.require(:movie).permit(:name, :rating, :date_of_release, :director, :poster)
   end
 end
