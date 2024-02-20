@@ -2,6 +2,8 @@
 
 <h1><strong>My Favorite Movies</strong></h1>
 <hr>
+  <%= link_to "Back", movies_path %>
+  <%= link_to "Add a new movie", root_path %>
 <div class="moviescontainer">
   <% @movies.each do |movie| %>
     <div class="moviecard" style="width: 18rem;">
@@ -11,9 +13,8 @@
         <p class="card-text">Rating: <%= movie.rating %></p>
         <p class="card-text">Release Date: <%= movie.date_of_release %></p>
         <p class="card-text">Director: <%= movie.director %></p>
-        <a href="#" class="btn btn-primary">See Details</a>
+        <%=link_to "see details", movie_path(movie), class: "btn btn-primary" %>
       </div>
     </div>
   <% end %>
 </div>
-
